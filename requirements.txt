@@ -1,6 +1,7 @@
 markdown
 pyramid_chameleon
 pyramid
+paste
 pyramid_debugtoolbar
 zope.structuredtext
 waitress
