@@ -1,6 +1,6 @@
 markdown
 pyramid_chameleon
-pyramid>=1.2
+pyramid
 pyramid_debugtoolbar
 zope.structuredtext
 waitress
