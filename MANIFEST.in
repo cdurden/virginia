@@ -1,0 +1,2 @@
+recursive-include virginia/templates *
+recursive-include virginia/static *

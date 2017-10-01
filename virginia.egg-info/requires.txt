@@ -1,0 +1,5 @@
+pyramid_chameleon
+pyramid>=1.2
+pyramid_debugtoolbar
+zope.structuredtext
+waitress
