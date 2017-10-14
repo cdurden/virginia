@@ -45,6 +45,7 @@ class Base(object):
     def js(context):
         return []
 
+
 class File(Base):
     def __init__(self, filesystem, path):
         self.filesystem = filesystem
