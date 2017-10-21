@@ -145,14 +145,50 @@ def markdown_view(context, request):
         title = md.Meta['title'][0]
     except:
         title = 'untitled'
-    return dict(title=title, content=result)
+    return dict(title=title, content=result, head=None)
+
+@view_config(context=File, name='.rem', renderer='templates/remark.pt')
+@view_config(context=File, name='.rem', renderer='templates/remark.pt', request_param='content_type=html')
+def remark_view(context, request):
+    """ Filesystem-based MD view
+    """
+    re_citations = re.compile(r'\(@(\S*?):(\S*?)\)')
+    citations = re_citations.findall(context.source.decode('utf-8')) # list of bibliographyfile:citation pairs
+    source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
+
+#    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
+    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
+    result = md.convert(source)
+    context.use_mathjax=True
+    context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
+
+    bibs = defaultdict(list)
+    for (bib,citation) in citations:
+        if citation not in bibs[bib]:
+            bibs[bib].append(citation)
+    for bib,citations in bibs.items():
+        bibfile = os.path.join(request.registry.settings['bibpath'],bib+".bib")
+        try:
+            result += bib2html.html(bibfile, citations, context.filesystem.root_path) 
+        except IOError:
+            pass
+    try:
+        title = md.Meta['title'][0]
+    except:
+        title = 'untitled'
+    return dict(title=title, content=source, head=None)
+
 
 @view_config(context=File, name='.html', renderer='templates/layout.pt')
 def html_view(context, request):
     """ Filesystem-based HTML view
     """
-    result = context.source.decode('utf-8')
-    return dict(title=context.title(), content=result)
+    source = context.source.decode('utf-8')
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(source, 'html.parser')
+    result = "".join([str(tag) for tag in soup.body.contents])
+    head = soup.head.contents
+    return dict(title=context.title(), content=result, head=head)
 
 @view_config(context=File, name='.dot', renderer='templates/layout.pt')
 def dot_view(context, request):
@@ -177,7 +213,7 @@ def bib_view(context, request):
     """ Filesystem-based BibTeX view
     """
     result = bib2html.html(context.path, rootdir=context.filesystem.root_path) 
-    return dict(title="untitled", content=result)
+    return dict(title="untitled", content=result, head=None)
     
 
 #@view_config(context=File, name='.html')

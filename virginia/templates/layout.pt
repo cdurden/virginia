@@ -18,6 +18,9 @@
     <tal:block repeat="css python: context.css">
       <style>${structure: css}</style>
     </tal:block>
+    <tal:block repeat="head_child python: head">
+      ${structure: head_child}
+    </tal:block>
     <more metal:define-slot="head-more"></more>
 </head>
 <body>
