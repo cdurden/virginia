@@ -335,3 +335,514 @@ LOG: 2017-10-21 13:50:40,771 DEBUG [MARKDOWN][MainThread] Successfuly imported e
 LOG: 2017-10-21 13:50:40,771 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
 LOG: 2017-10-21 13:50:40,772 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:13:50:40 -0400] "GET /jmamath7/ HTTP/1.1" 200 1840 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
 LOG: 2017-10-21 13:50:40,781 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:13:50:40 -0400] "GET /jmamath7/%28%29/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML HTTP/1.1" 404 177 "http://localhost/jmamath7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:11:06,232 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:11:06,233 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:11:06,233 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:11:06,233 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:11:06,235 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:11:06,236 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:11:06,236 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:11:06,241 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:11:06,242 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:11:06,246 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:11:06,246 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:11:06,253 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:11:06,253 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:11:06,255 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:11:06,255 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:11:06,255 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:11:06,255 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:11:06,257 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:11:06,257 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:11:06,257 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:11:06,259 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:11:06,259 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:11:06,269 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:11:06,292 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:11:06 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5388 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:11:06,496 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:11:06 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:13:51,562 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:13:51,563 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:13:51,563 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:13:51,563 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:13:51,565 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:13:51,566 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:13:51,567 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:13:51,571 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:13:51,571 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:13:51,575 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:13:51,575 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:13:51,581 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:13:51,582 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:13:51,584 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:13:51,584 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:13:51,584 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:13:51,584 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:13:51,585 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:13:51,585 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:13:51,586 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:13:51,587 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:13:51,587 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:13:51,598 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:13:51,625 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:13:51 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5487 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:13:51,784 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:13:51 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:17:29,405 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:17:29,406 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:17:29,406 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:17:29,406 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:17:29,408 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:17:29,409 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:17:29,410 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:17:29,414 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:17:29,415 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:17:29,420 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:17:29,421 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:17:29,428 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:17:29,428 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:17:29,430 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:17:29,431 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:17:29,431 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:17:29,431 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:17:29,432 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:17:29,432 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:17:29,433 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:17:29,434 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:17:29,435 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:17:29,446 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:17:29,473 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:17:29 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5660 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:17:29,702 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:17:29 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:19:12,860 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:19:12,860 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:19:12,860 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:19:12,861 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:19:12,863 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:19:12,863 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:19:12,864 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:19:12,868 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:19:12,869 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:19:12,872 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:19:12,873 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:19:12,879 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:19:12,879 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:19:12,881 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:19:12,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:19:12,881 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:19:12,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:19:12,883 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:19:12,883 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:19:12,883 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:19:12,885 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:19:12,885 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:19:12,897 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:19:12,920 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:19:12 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5591 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:19:13,104 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:19:13 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:20:11,988 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:20:11,989 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:20:11,990 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:20:11,991 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:20:11,991 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:20:12,004 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:20:11 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5639 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:20:13,097 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:20:13 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:22:49,261 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:22:49,261 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:22:49,261 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:22:49,262 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:22:49,264 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:22:49,264 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:22:49,265 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:22:49,270 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:22:49,270 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:22:49,276 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:22:49,276 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:22:49,283 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:22:49,283 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:22:49,285 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:22:49,285 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:22:49,285 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:22:49,285 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:22:49,286 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:22:49,287 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:22:49,287 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:22:49,291 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:22:49,291 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:22:49,305 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:22:49,329 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:22:49 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5724 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:22:49,531 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:22:49 -0400] "GET /jmamath7/doc/bg.png HTTP/1.1" 404 163 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:23:33,064 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:23:33,064 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:23:33,064 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:23:33,064 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:23:33,064 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:23:33,065 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:23:33,066 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:23:33,067 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:23:33,067 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:23:33,067 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:23:33,067 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:23:33,067 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:23:33,086 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:23:33 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5725 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:24:30,933 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:24:30,933 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:24:30,933 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:24:30,934 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:24:30,936 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:24:30,936 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:24:30,937 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:24:30,941 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:24:30,941 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:24:30,946 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:24:30,947 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:24:30,953 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:24:30,953 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:24:30,955 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:24:30,956 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:24:30,956 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:24:30,956 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:24:30,958 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:24:30,958 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:24:30,958 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:24:30,960 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:24:30,960 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:24:30,970 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:24:30,996 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:24:30 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5725 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:24:53,644 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:24:53,644 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:24:53,644 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:24:53,644 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:24:53,644 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:24:53,645 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:24:53,645 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:24:53,645 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:24:53,645 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:24:53,645 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:24:53,646 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:24:53,646 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:24:53,646 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:24:53,646 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:24:53,647 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:24:53,659 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:24:53 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5732 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:25:09,879 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:25:09,880 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:25:09,881 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:25:09,894 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:09 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5709 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:11,209 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:11 -0400] "GET /jmamath7/doc/images/bg.png HTTP/1.1" 404 170 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:38,031 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:25:38,031 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:25:38,031 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:38,031 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:25:38,038 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:25:38,039 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:25:38,040 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:25:38,049 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:25:38,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:25:38,054 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:25:38,054 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:25:38,061 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:25:38,061 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:25:38,064 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:25:38,064 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:25:38,064 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:25:38,065 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:38,068 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:25:38,068 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:25:38,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:25:38,071 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:25:38,071 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:25:38,083 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:25:38,111 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:38 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5712 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:38,311 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:38 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 200 233307 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:54,166 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:25:54,166 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:25:54,166 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:54,166 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:25:54,168 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:25:54,169 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:25:54,169 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:25:54,174 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:25:54,175 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:25:54,178 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:25:54,179 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:25:54,185 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:25:54,185 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:25:54,187 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:25:54,187 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:25:54,187 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:25:54,187 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:25:54,188 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:25:54,189 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:25:54,189 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:25:54,191 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:25:54,191 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:25:54,201 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:25:54,224 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:54 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5710 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:25:54,423 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:25:54 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:27:20,019 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:27:20,020 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:27:20,020 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:27:20,020 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:27:20,022 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:27:20,023 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:27:20,023 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:27:20,027 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:27:20,028 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:27:20,031 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:27:20,032 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:27:20,039 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:27:20,039 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:27:20,041 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:27:20,041 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:27:20,041 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:27:20,041 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:27:20,042 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:27:20,042 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:27:20,043 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:27:20,044 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:27:20,044 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:27:20,054 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2168 bytes)...
+LOG: 2017-10-21 14:27:20,077 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:27:20 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5712 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:27:20,273 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:27:20 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:30:44,328 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:30:44,329 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:30:44,329 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:30:44,329 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:30:44,331 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:30:44,331 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:30:44,332 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:30:44,336 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:30:44,336 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:30:44,340 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:30:44,340 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:30:44,346 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:30:44,346 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:30:44,348 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:30:44,348 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:30:44,349 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:30:44,349 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:30:44,350 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:30:44,350 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:30:44,350 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:30:44,353 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:30:44,354 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:30:44,364 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2220 bytes)...
+LOG: 2017-10-21 14:30:44,386 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:30:44 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5764 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:30:44,581 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:30:44 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:31:34,766 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:31:34,767 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:31:34,768 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:31:34,768 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:31:34,779 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:31:34 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5764 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:31:36,606 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:31:36 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 200 76663 "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:40:43,843 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:40:43,845 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:40:43,845 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:40:43,845 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:40:43,849 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:40:43,850 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:40:43,851 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:40:43,856 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:40:43,856 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:40:43,861 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:40:43,861 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:40:43,868 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:40:43,869 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:40:43,871 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:40:43,871 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:40:43,871 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:40:43,871 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:40:43,873 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:40:43,873 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:40:43,873 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:40:43,875 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:40:43,875 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:40:43,888 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2220 bytes)...
+LOG: 2017-10-21 14:40:43,909 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:40:43 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5770 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:40:44,117 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:40:44 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:40:49,067 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:40:49,068 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:40:49,068 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:40:49,068 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:40:49,068 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:40:49,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:40:49,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:40:49,082 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:40:49 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5783 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:41:18,505 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:41:18,506 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:41:18,506 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:41:18,506 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:41:18,508 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:41:18,509 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:41:18,509 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:41:18,513 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:41:18,514 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:41:18,517 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:41:18,518 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:41:18,524 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:41:18,524 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:41:18,526 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:41:18,527 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:41:18,527 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:41:18,527 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:41:18,528 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:41:18,528 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:41:18,529 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:41:18,530 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:41:18,530 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:41:18,547 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2220 bytes)...
+LOG: 2017-10-21 14:41:18,570 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:41:18 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5787 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:41:55,048 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:41:55,049 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:41:55,050 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:41:55,051 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:41:55,063 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:41:55 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5801 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:41:55,291 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:41:55 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:43:40,645 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:43:40,646 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:43:40,646 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:43:40,646 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:43:40,648 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:43:40,649 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:43:40,649 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:43:40,653 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:43:40,653 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:43:40,657 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:43:40,658 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:43:40,664 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:43:40,665 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:43:40,666 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:43:40,667 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:43:40,667 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:43:40,667 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:43:40,668 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:43:40,668 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:43:40,668 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:43:40,670 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:43:40,670 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:43:40,680 DEBUG [chameleon.template][MainThread] cooking '/home/cld/git/virginia/virginia/templates/remark.pt' (2220 bytes)...
+LOG: 2017-10-21 14:43:40,702 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:43:40 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5804 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:43:40,895 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:43:40 -0400] "GET /jmamath7/images/bg.png HTTP/1.1" 304 - "http://localhost/jmamath7/doc/unit1review.rem" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-10-21 14:44:36,130 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-10-21 14:44:36,131 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-10-21 14:44:36,132 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-10-21 14:44:36,133 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-10-21 14:44:36,133 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-10-21 14:44:36,133 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-10-21 14:44:36,133 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-10-21 14:44:36,150 INFO  [wsgi][MainThread] ::1 - - [21/Oct/2017:14:44:36 -0400] "GET /jmamath7/doc/unit1review.rem HTTP/1.1" 200 5859 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
