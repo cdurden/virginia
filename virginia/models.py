@@ -24,7 +24,7 @@ class Base(object):
     @reify
     def header(context): # this function assumes that context will be a File or Directory object, but it could be a Filesystem object
         fs = context.filesystem
-        headerfile = File(fs, fs.join(fs.root_path,"header.md"))
+        headerfile = File(fs, fs.join(fs.root_path,"header.md"), None)
         mdProcessor = markdown.Markdown(extensions=['mathjax'])
         result = mdProcessor.convert(headerfile.source.decode('utf-8'))
         return result
@@ -32,7 +32,7 @@ class Base(object):
     @reify
     def nav(context): # this function assumes that context will be a File or Directory object, but it could be a Filesystem object
         fs = context.filesystem
-        navfile = File(fs, fs.join(fs.root_path,"nav.md"))
+        navfile = File(fs, fs.join(fs.root_path,"nav.md"), None)
         mdProcessor = markdown.Markdown(extensions=['mathjax'])
         result = mdProcessor.convert(navfile.source.decode('utf-8'))
         return result
@@ -47,10 +47,11 @@ class Base(object):
 
 
 class File(Base):
-    def __init__(self, filesystem, path):
+    def __init__(self, filesystem, path, name):
         self.filesystem = filesystem
         self.path = os.path.abspath(os.path.normpath(path))
         self.use_mathjax = False
+        self.__name__ = name
 
     def _source(self):
         return self.filesystem.read(self.path)
@@ -62,8 +63,10 @@ class File(Base):
 
 class Directory(Base):
     file_class = File
+    __name__ = ''
+    __parent__ = None
 
-    def __init__(self, filesystem, path):
+    def __init__(self, filesystem, path, name):
         self.filesystem = filesystem
         self.path = os.path.abspath(os.path.normpath(path))
         self.use_mathjax = False
@@ -81,15 +84,15 @@ class Directory(Base):
                     # primitive alias; use the link target as the
                     # filename so we get the right renderer (eg. stx
                     # vs html).
-                    return File(self.filesystem, realpath)
+                    return File(self.filesystem, realpath, name)
                 else:
                     raise KeyError(name)
             else:
                 raise KeyError(name)
         elif self.filesystem.isdir(nextpath):
-            return self.__class__(self.filesystem, nextpath)
+            return self.__class__(self.filesystem, nextpath, name)
         elif self.filesystem.isfile(nextpath):
-            return self.file_class(self.filesystem, nextpath)
+            return self.file_class(self.filesystem, nextpath, name)
         else:
             raise KeyError(name)
 

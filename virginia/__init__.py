@@ -29,7 +29,7 @@ def main(global_config, **settings):
             subprocess.call(["git","reset","--hard","origin/master"], cwd = root_path)
             return(HTTPOk)
         else:
-            return Directory(fs, root)
+            return Directory(fs, root, None)
     config = Configurator(root_factory=get_root, settings=settings)
     config.include('pyramid_chameleon')
     config.add_static_view(name='static', path='virginia:static')

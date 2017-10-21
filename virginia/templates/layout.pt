@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <title>${title}</title>
-    <link rel="stylesheet" href="${request.static_url('virginia:static/css/main.css')}"/>
-    <script tal:condition="context.use_mathjax" src="${request.static_url('virginia:static/js/MathJax/MathJax.js')}?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <link rel="stylesheet" href="${request.resource_url(request.virtual_root,'css','main.css')}"/>
+    <script tal:condition="context.use_mathjax" src="${request.virtual_root_path}/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <!--
     <script tal:condition="context.use_mathjax" src="${request.static_url('virginia:static/js/MathJax/MathJax.js')}" type="text/javascript"></script>
     <script tal:condition="context.use_mathjax" type="text/javascript"> MathJax.Hub.Config({ "tex2jax": { inlineMath: [ [ '$', '$' ] ] } }); </script>-->
@@ -30,19 +30,21 @@
     </tal:block>
 </header>
 
-<div id="main">
-    <tal:block metal:define-slot="title">
-    </tal:block>
-    <div id="nav"> 
+<nav>
     <tal:block metal:define-slot="nav">
       ${structure: context.nav}
     </tal:block>
-    </div>
+</nav>
+<main>
+<section>
     <div id="content">
       <tal:block metal:define-slot="content">
         ${structure: content}
       </tal:block>
     </div>
-</div>
+</section>
+</main>
+<footer>
+</footer>
 </body>
 </html>
