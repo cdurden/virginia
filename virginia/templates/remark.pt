@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+      <title>${title}</title>
     <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-slide-content { background-size: contain; } .remark-slide-content table{width:100%;margin:1em 0;border-collapse:separate;border-spacing:3px}.remark-slide-content table th{padding:.7em;background-color:#7f8c8d;color:#fff;font-weight:400}.remark-slide-content table th:first-child{border-radius:10px 0 0}.remark-slide-content table th:last-child{border-radius:0 10px 0 0}.remark-slide-content table td{padding:.7em;background-color:#ced4d8}.remark-slide-content table tr:last-child td:first-child{border-radius:0 0 0 10px}.remark-slide-content table tr:last-child td:last-child{border-radius:0 0 10px}.remark-slide-content .inverted table td,.remark-slide-content .inverted table th{background-color:transparent;border:2px solid #ced4d8}.remark-slide-content .inverted table{border-spacing:0}.remark-slide-content .inverted table th{color:#000;font-weight:700}.remark-slide-content.title{padding:0 2em;text-align:center}
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link rel="stylesheet" href="${request.resource_url(request.virtual_root,'css','remark.css')}"/>
   </head>
   <body>
     <textarea id="source">${structure: content}</textarea>
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        <script src="${request.resource_url(request.virtual_root,'js','timer.js')}"></script>
         <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
