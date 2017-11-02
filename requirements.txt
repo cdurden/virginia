@@ -5,3 +5,4 @@ paste
 pyramid_debugtoolbar
 zope.structuredtext
 waitress
+bs4
