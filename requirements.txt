@@ -6,4 +6,4 @@ pyramid_debugtoolbar
 zope.structuredtext
 waitress
 bs4
-mdx_pymdownx
+pymdown-extensions
