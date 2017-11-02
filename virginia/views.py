@@ -95,6 +95,26 @@ def structured_text_view(context, request):
     result = stx2html(context.source)
     return dict(title=context.title(), content=result)
 
+@view_config(context=File, name='.csv', renderer='templates/layout.pt')
+def csv_view(context, request):
+    import pandas as pd
+    
+    #columns = ['age', 'week', 'opp', 'ACscr', 'OPPscr', 'location']
+    df = pd.read_csv(context.path)#, names=columns)
+    
+    # This you can change it to whatever you want to get
+    #age_15 = df[df['age'] == 'U15']
+    # Other examples:
+    #bye = df[df['opp'] == 'Bye']
+    #crushed_team = df[df['ACscr'] == '0']
+    #crushed_visitor = df[df['OPPscr'] == '0']
+    # Play with this
+    
+    # Use the .to_html() to get your table in html
+    #print(df.to_html())
+    result = df.to_html()
+    return dict(title='untitled', content=result, head=None)
+
 @view_config(context=File, name='.md', renderer='templates/layout.pt', request_param='content_type=tex')
 def markdown_view_as_tex(context, request):
     """ Filesystem-based MD view
@@ -126,7 +146,8 @@ def markdown_view(context, request):
     source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
 
 #    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
-    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
+#    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
+    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji'])
     result = md.convert(source)
     context.use_mathjax=True
     context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
@@ -157,7 +178,8 @@ def remark_view(context, request):
     source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
 
 #    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
-    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
+
+    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji'])
     result = md.convert(source)
     context.use_mathjax=True
     context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")

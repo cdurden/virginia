@@ -30,6 +30,7 @@ requires = [
     'pyramid_debugtoolbar',
     'zope.structuredtext',
     'waitress',
+    'bs4',
     ]
 
 if sys.version_info[:3] < (2,5,0):

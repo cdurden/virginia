@@ -14,7 +14,9 @@
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        ratio: '16:9'
+      });
       $(window).load(function() {
   MathJax.Hub.Config({
     tex2jax: {
