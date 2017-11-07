@@ -10,21 +10,33 @@
     <textarea id="source">${structure: content}</textarea>
         <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
         <script src="${request.resource_url(request.virtual_root,'js','timer.js')}"></script>
-        <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="${request.resource_url(request.virtual_root,'js','jquery-latest.min.js')}"></script>
+        <script src="${request.resource_url(request.virtual_root,'js','remark-latest.min.js')}"></script>
+        <!--<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>-->
         <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
     <script>
+      remark.macros.include = function () {
+        var url = this;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open('GET', this, false);
+        xmlhttp.send();
+        return xmlhttp.responseText;
+      };
       var slideshow = remark.create({
-        ratio: '16:9'
+        ratio: '16:9',
+        navigation: {
+          scroll: false
+        }
       });
       $(window).load(function() {
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$'], ['\\(','\\)']]
-    }
-  });
-            MathJax.Hub.Configured();
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+        });
+        MathJax.Hub.Configured();
       });
     </script>
   </body>

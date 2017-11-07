@@ -16,6 +16,8 @@ class Filesystem(object):
     def open(self, path):
         if path.startswith(self.root_path):
             return open(path, 'rb')
+        #else: # allow access outside the filesystem
+        #    return open(path, 'rb')
 
     def read(self, path):
         return self.open(path).read()
@@ -53,7 +55,11 @@ class File(Base):
         self.use_mathjax = False
         self.__name__ = name
 
+    def dirname(self):
+        return os.path.dirname(self.path)
+
     def _source(self):
+        print(self.path)
         return self.filesystem.read(self.path)
 
     def title(self):
@@ -75,18 +81,28 @@ class Directory(Base):
         nextpath = self.filesystem.join(self.path, name)
         if self.filesystem.islink(nextpath):
             realpath = self.filesystem.realpath(nextpath)
-            if  ( realpath.startswith(self.path) and
-                  self.filesystem.isfile(realpath) ):
-                realdir = self.filesystem.dirname(realpath)
-                if len(self.path.split(os.sep)) == len(realdir.split(os.sep)):
-                    # if this symlink to a file is in the same
-                    # directory as the original file, treat it as a
-                    # primitive alias; use the link target as the
-                    # filename so we get the right renderer (eg. stx
-                    # vs html).
-                    return File(self.filesystem, realpath, name)
-                else:
-                    raise KeyError(name)
+            print(nextpath)
+            print(realpath)
+#            if  ( realpath.startswith(self.path) and
+#                  self.filesystem.isfile(realpath) ):
+#                realdir = self.filesystem.dirname(realpath)
+#                if len(self.path.split(os.sep)) == len(realdir.split(os.sep)):
+#                    # if this symlink to a file is in the same
+#                    # directory as the original file, treat it as a
+#                    # primitive alias; use the link target as the
+#                    # filename so we get the right renderer (eg. stx
+#                    # vs html).
+#                    return File(self.filesystem, realpath, name)
+#                else:
+#                    #raise KeyError(name)
+#                    return File(self.filesystem, realpath, name)
+#            elif ( realpath.startswith(self.filesystem.root_path) and
+#                    self.filesystem.isdir(realpath) ):
+#                return self.__class__(self.filesystem, nextpath, name)
+            if self.filesystem.isfile(realpath):
+                return File(self.filesystem, realpath, name)
+            elif self.filesystem.isdir(realpath):
+                return self.__class__(self.filesystem, nextpath, name)
             else:
                 raise KeyError(name)
         elif self.filesystem.isdir(nextpath):

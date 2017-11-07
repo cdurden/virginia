@@ -22,6 +22,8 @@ from zope.structuredtext import stx2html
 import markdown
 from markdown.extensions.tables import TableExtension
 from markdown.extensions.toc import TocExtension
+from markdown_include.include import MarkdownInclude
+
 #try: import mdx_mathjax
 #except: pass
 #try: import mdx_latex
@@ -130,7 +132,11 @@ def markdown_view_as_tex(context, request):
     for bib,citations in bibs.items():
         source += '\bibliography{'+bib+'}{}'
 
-    result = markdown.markdown(source, extensions=['latex','markdown.extensions.extra','markdown.extensions.meta'])
+# Markdown Extensions
+    markdown_include = MarkdownInclude(
+                           configs={'base_path':context.dirname()}
+                       )
+    result = markdown.markdown(source, extensions=['latex','extra','attr_list','markdown.extensions.extra','markdown.extensions.meta',markdown_include])
 
     response = Response(result)
     response.content_type = 'text/plain'
@@ -144,13 +150,18 @@ def markdown_view(context, request):
     re_citations = re.compile(r'\(@(\S*?):(\S*?)\)')
     citations = re_citations.findall(context.source.decode('utf-8')) # list of bibliographyfile:citation pairs
     source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
+    print(source)
 
 #    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
 #    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
-    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji'])
+    markdown_include = MarkdownInclude(
+                           #configs={'base_path':context.filesystem.root_path}
+                           configs={'base_path':context.dirname()}
+                       )
+    md = markdown.Markdown(extensions=['mathjax','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
     result = md.convert(source)
     context.use_mathjax=True
-    context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
+    #context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
 
     bibs = defaultdict(list)
     for (bib,citation) in citations:
@@ -168,6 +179,34 @@ def markdown_view(context, request):
         title = 'untitled'
     return dict(title=title, content=result, head=None)
 
+@view_config(context=File, name='.rev', renderer='templates/reveal.pt')
+@view_config(context=File, name='.rev', renderer='templates/reveal.pt', request_param='content_type=html')
+def reveal_view(context, request):
+    """ Filesystem-based MD view
+    """
+    re_citations = re.compile(r'\(@(\S*?):(\S*?)\)')
+    citations = re_citations.findall(context.source.decode('utf-8')) # list of bibliographyfile:citation pairs
+    source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
+
+    context.use_mathjax=True
+    context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
+
+    bibs = defaultdict(list)
+    for (bib,citation) in citations:
+        if citation not in bibs[bib]:
+            bibs[bib].append(citation)
+    for bib,citations in bibs.items():
+        bibfile = os.path.join(request.registry.settings['bibpath'],bib+".bib")
+        try:
+            result += bib2html.html(bibfile, citations, context.filesystem.root_path) 
+        except IOError:
+            pass
+    try:
+        title = md.Meta['title'][0]
+    except:
+        title = 'untitled'
+    return dict(title=title, content=source, head=None)
+
 @view_config(context=File, name='.rem', renderer='templates/remark.pt')
 @view_config(context=File, name='.rem', renderer='templates/remark.pt', request_param='content_type=html')
 def remark_view(context, request):
@@ -179,8 +218,33 @@ def remark_view(context, request):
 
 #    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
 
-    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji'])
-    result = md.convert(source)
+    markdown_include = MarkdownInclude(
+                           #configs={'base_path':context.filesystem.root_path}
+                           configs={'base_path':context.dirname()}
+                       )
+    md = markdown.Markdown(extensions=['mathjax','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
+
+    # Split into lines and run the line preprocessors.
+#    md.lines = source.split("\n")
+#    for prep in md.preprocessors.values():
+#        md.lines = prep.run(md.lines)
+#    print(md.lines)
+#    output = "\n".join(md.lines)
+
+    # Parse the high-level elements.
+    #root = md.parser.parseDocument(md.lines).getroot()
+
+    # Run the tree-processors
+#    for treeprocessor in md.treeprocessors.values():
+#        newRoot = treeprocessor.run(root)
+#        if newRoot is not None:
+#            root = newRoot
+
+    # Serialize _properly_.  Strip top-level tags.
+    #output = md.serializer(root)
+
+#    print(output)
+#    result = md.convert(source)
     context.use_mathjax=True
     context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
 
@@ -243,10 +307,13 @@ def bib_view(context, request):
 @view_config(context=File, name='.css')
 @view_config(context=File, name='.pdf')
 @view_config(context=File, name='.png')
+@view_config(context=File, name='.ttf')
+@view_config(context=File, name='.woff')
 @view_config(context=File, name='.txt')
 @view_config(context=File, name='.jpg')
 @view_config(context=File, name='.sh')
 @view_config(context=File, name='.svg')
+@view_config(context=File, name='.md', renderer='templates/layout.pt', request_param='raw=true')
 def raw_view(context, request):
     """ Just return the source raw.
     """
