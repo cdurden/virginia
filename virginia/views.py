@@ -100,20 +100,7 @@ def structured_text_view(context, request):
 @view_config(context=File, name='.csv', renderer='templates/layout.pt')
 def csv_view(context, request):
     import pandas as pd
-    
-    #columns = ['age', 'week', 'opp', 'ACscr', 'OPPscr', 'location']
     df = pd.read_csv(context.path)#, names=columns)
-    
-    # This you can change it to whatever you want to get
-    #age_15 = df[df['age'] == 'U15']
-    # Other examples:
-    #bye = df[df['opp'] == 'Bye']
-    #crushed_team = df[df['ACscr'] == '0']
-    #crushed_visitor = df[df['OPPscr'] == '0']
-    # Play with this
-    
-    # Use the .to_html() to get your table in html
-    #print(df.to_html())
     result = df.to_html()
     return dict(title='untitled', content=result, head=None)
 
@@ -152,8 +139,6 @@ def markdown_view(context, request):
     source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
     print(source)
 
-#    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
-#    md = markdown.Markdown(extensions=['mathjax',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta'])
     markdown_include = MarkdownInclude(
                            #configs={'base_path':context.filesystem.root_path}
                            configs={'base_path':context.dirname()}
@@ -216,48 +201,11 @@ def remark_view(context, request):
     citations = re_citations.findall(context.source.decode('utf-8')) # list of bibliographyfile:citation pairs
     source = re_citations.sub("(#\\2)",context.source.decode('utf-8'))
 
-#    result = markdown.markdown(source, extensions=['mathjax',TableExtension(), TocExtension(baselevel=1),'markdown.extensions.extra', 'markdown.extensions.meta'])
-
     markdown_include = MarkdownInclude(
                            #configs={'base_path':context.filesystem.root_path}
                            configs={'base_path':context.dirname()}
                        )
     md = markdown.Markdown(extensions=['mathjax','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
-
-    # Split into lines and run the line preprocessors.
-#    md.lines = source.split("\n")
-#    for prep in md.preprocessors.values():
-#        md.lines = prep.run(md.lines)
-#    print(md.lines)
-#    output = "\n".join(md.lines)
-
-    # Parse the high-level elements.
-    #root = md.parser.parseDocument(md.lines).getroot()
-
-    # Run the tree-processors
-#    for treeprocessor in md.treeprocessors.values():
-#        newRoot = treeprocessor.run(root)
-#        if newRoot is not None:
-#            root = newRoot
-
-    # Serialize _properly_.  Strip top-level tags.
-    #output = md.serializer(root)
-
-#    print(output)
-#    result = md.convert(source)
-    context.use_mathjax=True
-    context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
-
-    bibs = defaultdict(list)
-    for (bib,citation) in citations:
-        if citation not in bibs[bib]:
-            bibs[bib].append(citation)
-    for bib,citations in bibs.items():
-        bibfile = os.path.join(request.registry.settings['bibpath'],bib+".bib")
-        try:
-            result += bib2html.html(bibfile, citations, context.filesystem.root_path) 
-        except IOError:
-            pass
     try:
         title = md.Meta['title'][0]
     except:
@@ -283,15 +231,6 @@ def dot_view(context, request):
     nx_digraph = pydotreader.load_networkx_digraph_from_dot(context.path)
     graphviz_digraph = pydotreader.convert_networkx_digraph_to_graphviz_digraph(nx_digraph)
     result = graphviz_digraph._repr_svg_()
-#    here = os.path.dirname(__file__)
-#    dir = os.path.join(here,'static','tmp')
-#    fd, path = tempfile.mkstemp(suffix='.svg',dir=dir) 
-#    try:
-#        with open(path,'w') as f:
-#            f.write(graphviz_digraph._repr_svg_())
-#    except IOError as e:
-#        raise(DotRenderError(e.value))
-#    return(request.static_url(os.path.join(here,'static','tmp',os.path.split(path)[1])))
     return dict(title="untitled", content=result) # pydotreader currently does not parse the graph id, so we cannot currently use this field as a title for the rendered graph
 
 @view_config(context=File, name='.bib', renderer='templates/layout.pt')
@@ -317,10 +256,5 @@ def bib_view(context, request):
 def raw_view(context, request):
     """ Just return the source raw.
     """
-#    response = Response(context.source)
     response = FileResponse(context.path)
-#    dirname, filename = os.path.split(context.path)
-#    name, ext = os.path.splitext(filename)
-#    mt, encoding = mimetypes.guess_type(filename)
-#    response.content_type = mt or 'text/plain'
     return response
