@@ -232,7 +232,7 @@ def dot_view(context, request):
     nx_digraph = pydotreader.load_networkx_digraph_from_dot(context.path)
     graphviz_digraph = pydotreader.convert_networkx_digraph_to_graphviz_digraph(nx_digraph)
     result = graphviz_digraph._repr_svg_()
-    return dict(title="untitled", content=result) # pydotreader currently does not parse the graph id, so we cannot currently use this field as a title for the rendered graph
+    return dict(title="untitled", content=result, head=None) # pydotreader currently does not parse the graph id, so we cannot currently use this field as a title for the rendered graph
 
 @view_config(context=File, name='.bib', renderer='templates/layout.pt')
 def bib_view(context, request):
