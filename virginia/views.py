@@ -247,6 +247,7 @@ def bib_view(context, request):
 @view_config(context=File, name='.pdf')
 @view_config(context=File, name='.png')
 @view_config(context=File, name='.ttf')
+@view_config(context=File, name='.docx')
 @view_config(context=File, name='.woff')
 @view_config(context=File, name='.txt')
 @view_config(context=File, name='.jpg')
