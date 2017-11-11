@@ -81,8 +81,7 @@ class Directory(Base):
         nextpath = self.filesystem.join(self.path, name)
         if self.filesystem.islink(nextpath):
             realpath = self.filesystem.realpath(nextpath)
-            print(nextpath)
-            print(realpath)
+            log.debug('Link encountered: %s -> %s)', nextpath, realpath)
 #            if  ( realpath.startswith(self.path) and
 #                  self.filesystem.isfile(realpath) ):
 #                realdir = self.filesystem.dirname(realpath)
