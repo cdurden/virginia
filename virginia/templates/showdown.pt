@@ -14,13 +14,6 @@
     <script src="${request.resource_url(request.virtual_root,'js','jquery-latest.min.js')}"></script>
     <script src="${request.resource_url(request.virtual_root,'js','jquery-ui-1.12.1','jquery-ui.js')}"></script>
     <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
-    <script>
-      $( function() {
-        $( "#accordion" ).accordion({
-          heightStyle: "content"
-        });
-      });
-    </script>
 <!--
     <script tal:condition="context.use_mathjax" src="${request.static_url('virginia:static/js/MathJax/MathJax.js')}" type="text/javascript"></script>
     <script tal:condition="context.use_mathjax" src="${request.virtual_root_path}/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>-->
@@ -45,7 +38,7 @@
 </header>
 
 <nav>
-        <textarea id="src">${structure: source}</textarea>
+        <textarea id="src" style="display:none;">${structure: source}</textarea>
 
     <tal:block metal:define-slot="nav">
       ${structure: context.nav}
@@ -121,6 +114,10 @@ function replaceMd(url, DOMObj) {
       $(window).load(function() {
 var cnv = new showdown.Converter({extensions: ['mdinclude']});
 document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
+
+        $( "#accordion" ).accordion({
+          heightStyle: "content"
+        });
 
         MathJax.Hub.Config({
           tex2jax: {
