@@ -71,7 +71,7 @@ showdown.extension('mdinclude', function () {
         text = text.replace(/{{(.*)}}/g, function(wm, url) {
           var n = myGb.push('<md-include data-url="' + url + '"></md-include>') - 1;
           alert(n);
-          return '\n~M~I' + n + '~M~I\n';
+          return '~M~I' + n + '~M~I';
         });
         return text;
       }
@@ -79,7 +79,7 @@ showdown.extension('mdinclude', function () {
     {
         type: 'output',
       filter: function(text) {
-        text = text.replace(/<p>~M~I(\d+)~M~I<\/p>/g, function (wm, n) {
+        text = text.replace(/~M~I(\d+)~M~I/g, function (wm, n) {
             var otp = myGb[n];
           return otp;
         });
