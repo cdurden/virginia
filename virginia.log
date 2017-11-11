@@ -1,0 +1,106 @@
+LOG: 2017-11-10 19:34:52,482 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 19:34:52,553 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 19:34:52,553 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 19:34:52,557 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:19:34:52 -0400] "GET /private/ HTTP/1.1" 200 2282 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 19:34:54,204 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:19:34:54 -0400] "GET /private/static/css/main.css HTTP/1.1" 200 1262 "http://localhost/private/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 19:34:54,206 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:19:34:54 -0400] "GET /private/photo.png HTTP/1.1" 200 6742 "http://localhost/private/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 19:48:53,867 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 19:48:53,937 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 19:48:53,937 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 19:48:53,940 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:19:48:53 -0400] "GET /private/ HTTP/1.1" 200 2282 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 19:48:53,950 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:19:48:53 -0400] "GET /private/photo.png HTTP/1.1" 200 6742 "http://localhost/private/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:23:53,454 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:23:53 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:20,701 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:20 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:22,304 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 20:24:22,370 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:24:22,371 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:24:22,373 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:22 -0400] "GET / HTTP/1.1" 200 2274 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:23,433 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:23 -0400] "GET /static/css/main.css HTTP/1.1" 200 1262 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:23,434 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:23 -0400] "GET /photo.png HTTP/1.1" 200 6742 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:25,525 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:25 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:36,069 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:24:36,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:24:36,069 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:24:36,070 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-11-10 20:24:36,072 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-11-10 20:24:36,073 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-11-10 20:24:36,073 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-11-10 20:24:36,078 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-11-10 20:24:36,078 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-11-10 20:24:36,082 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-11-10 20:24:36,082 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-11-10 20:24:36,088 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-11-10 20:24:36,089 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-11-10 20:24:36,090 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-11-10 20:24:36,091 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-11-10 20:24:36,091 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-11-10 20:24:36,091 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:24:36,092 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-11-10 20:24:36,092 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-11-10 20:24:36,092 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-11-10 20:24:36,095 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 20:24:36,154 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:24:36,154 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:24:36,156 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:36 -0400] "GET /teaching/ HTTP/1.1" 200 2450 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:36,168 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:36 -0400] "GET /static/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML HTTP/1.1" 404 226 "http://localhost/teaching/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:43,157 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:43 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "http://localhost/teaching/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:46,887 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:46 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "http://localhost/teaching/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:54,800 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:24:54,800 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:24:54,800 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:24:54,801 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-11-10 20:24:54,803 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-11-10 20:24:54,804 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-11-10 20:24:54,804 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-11-10 20:24:54,810 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-11-10 20:24:54,810 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-11-10 20:24:54,814 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-11-10 20:24:54,814 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-11-10 20:24:54,821 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-11-10 20:24:54,821 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-11-10 20:24:54,824 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-11-10 20:24:54,824 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-11-10 20:24:54,824 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-11-10 20:24:54,824 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:24:54,825 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-11-10 20:24:54,825 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-11-10 20:24:54,826 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-11-10 20:24:54,827 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 20:24:54,892 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:24:54,892 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:24:54,895 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:54 -0400] "GET /teaching/private.md HTTP/1.1" 200 1772 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:24:54,903 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:24:54 -0400] "GET /static/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML HTTP/1.1" 404 226 "http://localhost/teaching/private.md" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:28:43,211 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:28:43 -0400] "GET /teaching/records/student_info/roster2.csv HTTP/1.1" 404 194 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:28:46,967 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:28:46 -0400] "GET /teaching/records/student_info/rostera.csv HTTP/1.1" 404 194 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:30:09,157 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:30:09 -0400] "GET /teaching/slides/12.rem HTTP/1.1" 404 175 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:30:21,933 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:30:21 -0400] "GET /teaching/slides/12.rem HTTP/1.1" 404 175 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:30:55,687 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:30:55 -0400] "GET /teaching/slides/12.rem HTTP/1.1" 404 175 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:31:02,890 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:31:02 -0400] "GET /teaching/slides/12.rem HTTP/1.1" 404 175 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:31:12,184 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:31:12 -0400] "GET /teaching/slides/10.rem HTTP/1.1" 404 175 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:31:24,169 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:31:24,170 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:31:24,170 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:31:24,170 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-11-10 20:31:24,173 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-11-10 20:31:24,174 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-11-10 20:31:24,175 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-11-10 20:31:24,179 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-11-10 20:31:24,180 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-11-10 20:31:24,183 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-11-10 20:31:24,184 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-11-10 20:31:24,190 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-11-10 20:31:24,190 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-11-10 20:31:24,192 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-11-10 20:31:24,192 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-11-10 20:31:24,192 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-11-10 20:31:24,192 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-10 20:31:24,195 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-11-10 20:31:24,195 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-11-10 20:31:24,195 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-11-10 20:31:24,199 DEBUG [chameleon.template][MainThread] cooking '/home/cld/opt/virtualenv/lib/python3.4/site-packages/virginia-0.0-py3.4.egg/virginia/templates/layout.pt' (1410 bytes)...
+LOG: 2017-11-10 20:31:24,263 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-10 20:31:24,263 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-10 20:31:24,265 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:31:24 -0400] "GET /teaching/ HTTP/1.1" 200 2450 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:31:25,835 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:31:25 -0400] "GET /static/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML HTTP/1.1" 404 226 "http://localhost/teaching/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:31:29,270 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:31:29 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "http://localhost/teaching/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-10 20:33:55,805 INFO  [wsgi][MainThread] ::1 - - [10/Nov/2017:20:33:55 -0400] "GET /teaching/calendar.md HTTP/1.1" 404 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
