@@ -1,5 +1,7 @@
 import os
 from pyramid.decorator import reify
+import logging
+log = logging.getLogger(__name__)
 import markdown
 
 class Filesystem(object):
