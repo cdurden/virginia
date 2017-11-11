@@ -56,6 +56,8 @@
 <footer>
 </footer>
     <script tal:condition="context.use_mathjax" type="text/javascript"> 
+
+      $(window).load(function() {
 showdown.extension('mdinclude', function () {
     var myGb = [];
     return [
@@ -83,6 +85,8 @@ showdown.extension('mdinclude', function () {
   ];
 });
 
+var cnv = new showdown.Converter({extensions: ['mdinclude'], tables: true});
+document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
 
 
 // Cicle through all md-includes
@@ -110,10 +114,6 @@ function replaceMd(url, DOMObj) {
   };
   xhr.send();
 }
-
-      $(window).load(function() {
-var cnv = new showdown.Converter({extensions: ['mdinclude'], tables: true});
-document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
 
         $( "#accordion" ).accordion({
           heightStyle: "content"
