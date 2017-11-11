@@ -70,7 +70,6 @@ showdown.extension('mdinclude', function () {
         });*/
         text = text.replace(/{{(.*)}}/g, function(wm, url) {
           var n = myGb.push('<md-include data-url="' + url + '"></md-include>') - 1;
-          alert(n);
           return '~M~I' + n + '~M~I';
         });
         return text;
