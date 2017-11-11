@@ -1,0 +1,44 @@
+LOG: 2017-11-11 02:22:14,016 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-11 02:22:14,016 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-11 02:22:14,021 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-11-11 02:22:14,022 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-11-11 02:22:14,022 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-11 02:22:14,022 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+LOG: 2017-11-11 02:22:14,022 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.extra".
+LOG: 2017-11-11 02:22:14,023 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.smart_strong".
+LOG: 2017-11-11 02:22:14,023 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+LOG: 2017-11-11 02:22:14,025 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.fenced_code".
+LOG: 2017-11-11 02:22:14,025 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+LOG: 2017-11-11 02:22:14,026 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.footnotes".
+LOG: 2017-11-11 02:22:14,026 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+LOG: 2017-11-11 02:22:14,026 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.attr_list".
+LOG: 2017-11-11 02:22:14,027 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+LOG: 2017-11-11 02:22:14,027 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.def_list".
+LOG: 2017-11-11 02:22:14,027 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+LOG: 2017-11-11 02:22:14,028 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.tables".
+LOG: 2017-11-11 02:22:14,028 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.tables.TableExtension".
+LOG: 2017-11-11 02:22:14,029 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.abbr".
+LOG: 2017-11-11 02:22:14,029 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+LOG: 2017-11-11 02:22:14,029 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+LOG: 2017-11-11 02:22:14,032 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "markdown.extensions.meta".
+LOG: 2017-11-11 02:22:14,033 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+LOG: 2017-11-11 02:22:14,041 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "pymdownx.emoji".
+LOG: 2017-11-11 02:22:14,045 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "pymdownx.emoji.EmojiExtension".
+LOG: 2017-11-11 02:22:14,045 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "markdown_include.include.MarkdownInclude".
+LOG: 2017-11-11 02:22:14,047 DEBUG [chameleon.template][MainThread] cooking '/home/cld/virginia/virginia/templates/showdown.pt' (4852 bytes)...
+LOG: 2017-11-11 02:22:14,151 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-11 02:22:14,151 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-11 02:22:14,153 DEBUG [MARKDOWN][MainThread] Successfuly imported extension module "mdx_mathjax".
+LOG: 2017-11-11 02:22:14,153 DEBUG [MARKDOWN][MainThread] Successfully loaded extension "mdx_mathjax.MathJaxExtension".
+LOG: 2017-11-11 02:22:14,154 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:13 -0400] "GET /jmamath7/ HTTP/1.1" 200 5029 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:14,167 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:14 -0400] "GET /jmamath7/css/main.css HTTP/1.1" 200 23272 "http://localhost/jmamath7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:14,169 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:14 -0400] "GET /jmamath7/js/jquery-latest.min.js HTTP/1.1" 200 95786 "http://localhost/jmamath7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:15,174 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:15 -0400] "GET /jmamath7/js/jquery-ui-1.12.1/jquery-ui.js HTTP/1.1" 200 520714 "http://localhost/jmamath7/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:16,212 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:16 -0400] "GET /jmamath7/fonts/rebranding-2017/circular/lineto-circular-bold.woff2 HTTP/1.1" 404 210 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:16,213 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:16 -0400] "GET /jmamath7/fonts/rebranding-2017/aktiv-grotesk/1370721/d1af32f0-173d-417a-9c5e-abc33c4fd20c.woff2 HTTP/1.1" 404 239 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:16,216 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:16 -0400] "GET /jmamath7/fonts/rebranding-2017/circular/lineto-circular-bold.woff HTTP/1.1" 404 209 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:17,179 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:17 -0400] "GET /jmamath7/fonts/rebranding-2017/aktiv-grotesk/1370721/5c9b4351-3407-4fab-96a1-d097522bb217.woff HTTP/1.1" 404 238 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:17,183 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:17 -0400] "GET /jmamath7/fonts/rebranding-2017/aktiv-grotesk/1370721/fdb92457-e497-46fe-bd46-656324061516.ttf HTTP/1.1" 404 237 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:29,200 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:29 -0400] "GET /jmamath7/fonts/rebranding-2017/aktiv-grotesk/1370721/5c9b4351-3407-4fab-96a1-d097522bb217.woff HTTP/1.1" 404 238 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:29,201 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:29 -0400] "GET /jmamath7/fonts/rebranding-2017/circular/lineto-circular-bold.woff HTTP/1.1" 404 209 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+LOG: 2017-11-11 02:22:29,203 INFO  [wsgi][MainThread] ::1 - - [11/Nov/2017:02:22:29 -0400] "GET /jmamath7/fonts/rebranding-2017/aktiv-grotesk/1370721/fdb92457-e497-46fe-bd46-656324061516.ttf HTTP/1.1" 404 237 "http://localhost/jmamath7/css/main.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
