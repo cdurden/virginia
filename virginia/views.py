@@ -163,7 +163,7 @@ def markdown_view(context, request):
         title = md.Meta['title'][0]
     except:
         title = 'untitled'
-    return dict(title=title, content=result, head=None)
+    return dict(title=title, content=result, source=source, head=None)
 
 @view_config(context=File, name='.rev', renderer='templates/reveal.pt')
 @view_config(context=File, name='.rev', renderer='templates/reveal.pt', request_param='content_type=html')

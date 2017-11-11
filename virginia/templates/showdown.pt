@@ -45,7 +45,7 @@
 </header>
 
 <nav>
-        <textarea id="src">${structure: content}</textarea>
+        <textarea id="src">${structure: source}</textarea>
 
         <div id="target"></div>
     <tal:block metal:define-slot="nav">
