@@ -31,6 +31,9 @@ requires = [
     'zope.structuredtext',
     'waitress',
     'bs4',
+    'paste',
+    'pymdown-extensions',
+    'markdown-include',
     ]
 
 if sys.version_info[:3] < (2,5,0):
