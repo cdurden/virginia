@@ -27,7 +27,7 @@ requires = [
 #    'markdown',
     'pyramid_chameleon',
     'pyramid>=1.2',
-    'pyramid_debugtoolbar',
+#    'pyramid_debugtoolbar',
     'zope.structuredtext',
     'waitress',
     'bs4',

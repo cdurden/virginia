@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:define-macro="layout">
+<head>
+    <meta charset="UTF-8" name=viewport content='width=500'>
+    <title>${title}</title>
+    <link rel="stylesheet" href="${request.resource_url(request.virtual_root,'css','main.css')}"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.1/showdown.min.js"></script>
+    <script src="${request.resource_url(request.virtual_root,'js','jquery-latest.min.js')}"></script>
+    <script src="${request.resource_url(request.virtual_root,'js','jquery-ui-1.12.1','jquery-ui.js')}"></script>
+    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion({
+          heightStyle: "content"
+        });
+      });
+    </script>
+<!--
+    <script tal:condition="context.use_mathjax" src="${request.static_url('virginia:static/js/MathJax/MathJax.js')}" type="text/javascript"></script>
+    <script tal:condition="context.use_mathjax" src="${request.virtual_root_path}/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>-->
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+    <!--<script tal:condition="context.use_mathjax" type="text/javascript"> MathJax.Hub.Config({ "tex2jax": { inlineMath: [ [ '$', '$' ] ] } }); </script>-->
+    <tal:block repeat="js python: context.js">
+      <script type="text/javascript">${structure: js}</script>
+    </tal:block>
+    <tal:block repeat="css python: context.css">
+      <style>${structure: css}</style>
+    </tal:block>
+    <tal:block repeat="head_child python: head">
+      ${structure: head_child}
+    </tal:block>
+    <more metal:define-slot="head-more"></more>
+</head>
+<body>
+<header class=".ui-widget-header">
+    <tal:block metal:define-slot="header">
+      ${structure: context.header}
+    </tal:block>
+</header>
+
+<nav>
+        <textarea id="src">${structure: content}</textarea>
+
+        <div id="target"></div>
+    <tal:block metal:define-slot="nav">
+      ${structure: context.nav}
+    </tal:block>
+</nav>
+<main>
+<section>
+    <div id="content">
+      <tal:block metal:define-slot="content">
+        ${structure: content}
+      </tal:block>
+    </div>
+</section>
+</main>
+<footer>
+</footer>
+    <script tal:condition="context.use_mathjax" type="text/javascript"> 
+showdown.extension('mdinclude', function () {
+    var myGb = [];
+    return [
+    {
+      type: 'lang',
+      filter: function(text) {
+        text = text.replace(/\n{{(.*)}}\n/g, function(wm, url) {
+          var n = myGb.push('<md-include data-url="' + url + '"></md-include>') - 1;
+          return '\n\n~M~I' + n + '~M~I\n\n';
+        });
+        return text;
+      }
+    },
+    {
+        type: 'output',
+      filter: function(text) {
+        text = text.replace(/<p>~M~I(\d+)~M~I<\/p>/g, function (wm, n) {
+            var otp = myGb[n];
+          return otp;
+        });
+        myGb = [];
+        return text;
+      }
+    }
+  ];
+});
+
+
+
+// Cicle through all md-includes
+var mdIncludeList = document.getElementsByTagName('md-include');
+
+for (var i = 0; i < mdIncludeList.length; i++) {
+        var url = mdIncludeList[i].getAttribute("data-url");
+    replaceMd(url, mdIncludeList[i])
+}
+
+
+//AJAX CALL - You can use jquery or something else
+function replaceMd(url, DOMObj) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url);
+  xhr.onload = function() {
+      if (xhr.status === 200) {
+        var myDiv = document.createElement("div");
+        myDiv.innerHTML = cnv.makeHtml(xhr.responseText);
+        DOMObj.parentNode.replaceChild(myDiv, DOMObj);
+      }
+      else {
+          alert('Request failed.  Returned status of ' + xhr.status);
+      }
+  };
+  xhr.send();
+}
+
+      $(window).load(function() {
+var cnv = new showdown.Converter({extensions: ['mdinclude']});
+document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
+
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+        });
+        MathJax.Hub.Configured();
+      });
+    </script>
+</body>
+</html>
