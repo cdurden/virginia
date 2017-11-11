@@ -90,6 +90,9 @@ showdown.extension('mdinclude', function () {
 });
 
 
+var cnv = new showdown.Converter({extensions: ['mdinclude'], tables: true});
+document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
+
 
 // Cicle through all md-includes
 var mdIncludeList = document.getElementsByTagName('md-include');
@@ -103,9 +106,6 @@ for (var i = 0; i < mdIncludeList.length; i++) {
           heightStyle: "content"
         });
 $( "#accordion" ).accordion( "refresh" );
-
-var cnv = new showdown.Converter({extensions: ['mdinclude'], tables: true});
-document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
 
 
 //AJAX CALL - You can use jquery or something else
