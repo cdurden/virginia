@@ -54,7 +54,7 @@
 </nav>
 <main>
 <section>
-    <div id="content">
+    <div id="target">
       <tal:block metal:define-slot="content">
         ${structure: content}
       </tal:block>
