@@ -112,7 +112,7 @@ function replaceMd(url, DOMObj) {
 }
 
       $(window).load(function() {
-var cnv = new showdown.Converter({extensions: ['mdinclude']});
+var cnv = new showdown.Converter({extensions: ['mdinclude'], tables: true});
 document.getElementById('target').innerHTML = cnv.makeHtml(document.getElementById('src').value);
 
         $( "#accordion" ).accordion({
