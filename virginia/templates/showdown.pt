@@ -97,6 +97,10 @@ for (var i = 0; i < mdIncludeList.length; i++) {
     replaceMd(url, mdIncludeList[i])
 }
 
+        $( "#accordion" ).accordion({
+          heightStyle: "content"
+        });
+
 
 //AJAX CALL - You can use jquery or something else
 function replaceMd(url, DOMObj) {
@@ -113,10 +117,7 @@ function replaceMd(url, DOMObj) {
       }
   };
   xhr.send();
-
-        $( "#accordion" ).accordion({
-          heightStyle: "content"
-        });
+}
 
         MathJax.Hub.Config({
           tex2jax: {
@@ -126,7 +127,6 @@ function replaceMd(url, DOMObj) {
         });
         MathJax.Hub.Configured();
       });
-}
     </script>
 </body>
 </html>
