@@ -113,7 +113,6 @@ function replaceMd(url, DOMObj) {
       }
   };
   xhr.send();
-}
 
         $( "#accordion" ).accordion({
           heightStyle: "content"
@@ -127,6 +126,7 @@ function replaceMd(url, DOMObj) {
         });
         MathJax.Hub.Configured();
       });
+}
     </script>
 </body>
 </html>
