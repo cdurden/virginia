@@ -64,9 +64,13 @@ showdown.extension('mdinclude', function () {
     {
       type: 'lang',
       filter: function(text) {
-        text = text.replace(/\n{{(.*)}}\n/g, function(wm, url) {
+        /*text = text.replace(/\n{{(.*)}}\n/g, function(wm, url) {
           var n = myGb.push('<md-include data-url="' + url + '"></md-include>') - 1;
           return '\n\n~M~I' + n + '~M~I\n\n';
+        });*/
+        text = text.replace(/{{(.*)}}/g, function(wm, url) {
+          var n = myGb.push('<md-include data-url="' + url + '"></md-include>') - 1;
+          return '\n~M~I' + n + '~M~I\n';
         });
         return text;
       }
