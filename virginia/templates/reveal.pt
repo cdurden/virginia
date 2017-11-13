@@ -39,7 +39,7 @@
             
                 dependencies: [
                     { src: 'plugin/math/math.js', async: true }
-                ]
+                ],
                 markdown: {
                     smartypants: true
                 }
