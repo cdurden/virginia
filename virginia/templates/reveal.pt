@@ -21,7 +21,6 @@
         </div>
 <!--
         <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-        <script src="${request.resource_url(request.virtual_root,'js','timer.js')}"></script>
         <script src="${request.resource_url(request.virtual_root,'js','jquery-latest.min.js')}"></script>
         <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -30,8 +29,17 @@
         <script src="${request.resource_url(request.virtual_root,'reveal.js','js','reveal.js')}"></script>
         <script src="${request.resource_url(request.virtual_root,'reveal.js','plugin','markdown','marked.js')}"></script>
         <script src="${request.resource_url(request.virtual_root,'reveal.js','plugin','markdown','markdown.js')}"></script>
+        <script src="${request.resource_url(request.virtual_root,'js','timer.js')}"></script>
         <script>
             Reveal.initialize({
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+            
+                dependencies: [
+                    { src: 'plugin/math/math.js', async: true }
+                ]
                 markdown: {
                     smartypants: true
                 }
