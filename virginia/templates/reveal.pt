@@ -27,6 +27,8 @@ A paragraph with some text and a [link](http://hakim.se).
         <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
 -->
         <script src="${request.resource_url(request.virtual_root,'reveal.js','js','reveal.js')}"></script>
+        <script src="${request.resource_url(request.virtual_root,'reveal.js','plugin','markdown','marked.js')}"></script>
+        <script src="${request.resource_url(request.virtual_root,'reveal.js','plugin','markdown','markdown.js')}"></script>
         <script>
             Reveal.initialize({
                 markdown: {
