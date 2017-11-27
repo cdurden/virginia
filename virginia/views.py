@@ -100,7 +100,9 @@ def structured_text_view(context, request):
 @view_config(context=File, name='.csv', renderer='templates/layout.pt')
 def csv_view(context, request):
     import pandas as pd
+    import numpy as np
     df = pd.read_csv(context.path)#, names=columns)
+    df = df.replace(np.nan, '', regex=True)
     result = df.to_html()
     return dict(title='untitled', content=result, head=None)
 
