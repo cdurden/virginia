@@ -130,8 +130,8 @@ def markdown_view_as_tex(context, request):
     return response
 
 #@view_config(context=File, name='.md', renderer='templates/layout.pt')
-@view_config(context=File, name='.md', renderer='templates/showdown.pt')
-@view_config(context=File, name='.md', renderer='templates/layout.pt', request_param='content_type=html')
+@view_config(context=File, name='.md', renderer='templates/layout.pt')
+@view_config(context=File, name='.md', renderer='templates/showdown.pt', request_param='content_type=showdown')
 def markdown_view(context, request):
     """ Filesystem-based MD view
     """
