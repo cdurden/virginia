@@ -258,6 +258,7 @@ def bib_view(context, request):
 @view_config(context=File, name='.sh')
 @view_config(context=File, name='.svg')
 @view_config(context=File, name='.md', renderer='templates/layout.pt', request_param='raw=true')
+@view_config(context=File, name='.html', request_param='raw=true')
 def raw_view(context, request):
     """ Just return the source raw.
     """
