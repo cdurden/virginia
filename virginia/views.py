@@ -147,7 +147,7 @@ def markdown_view(context, request):
                            #configs={'base_path':context.filesystem.root_path}
                            configs={'base_path':context.dirname()}
                        )
-    md = markdown.Markdown(extensions=['mathjax','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
+    md = markdown.Markdown(extensions=['mdx_math','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
     result = md.convert(source)
     context.use_mathjax=True
     #context.js.append("MathJax.Hub.Config({ 'tex2jax': { inlineMath: [ [ '$', '$' ] ] } });")
