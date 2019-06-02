@@ -35,6 +35,7 @@ requires = [
     'pymdown-extensions',
     'python-markdown-math',
     'python-markdown-mathjax',
+    'mathjax',
     'markdown-include',
     ]
 
