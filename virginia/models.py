@@ -29,7 +29,7 @@ class Base(object):
     def header(context): # this function assumes that context will be a File or Directory object, but it could be a Filesystem object
         fs = context.filesystem
         headerfile = File(fs, fs.join(fs.root_path,"header.md"), None)
-        mdProcessor = markdown.Markdown(extensions=['mathjax'])
+        mdProcessor = markdown.Markdown(extensions=['mdx_math'])
         result = mdProcessor.convert(headerfile.source.decode('utf-8'))
         return result
 
@@ -37,7 +37,7 @@ class Base(object):
     def nav(context): # this function assumes that context will be a File or Directory object, but it could be a Filesystem object
         fs = context.filesystem
         navfile = File(fs, fs.join(fs.root_path,"nav.md"), None)
-        mdProcessor = markdown.Markdown(extensions=['mathjax'])
+        mdProcessor = markdown.Markdown(extensions=['mdx_math'])
         result = mdProcessor.convert(navfile.source.decode('utf-8'))
         return result
 
