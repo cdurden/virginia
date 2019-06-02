@@ -33,6 +33,7 @@ requires = [
     'bs4',
     'paste',
     'pymdown-extensions',
+    'python-markdown-math',
     'markdown-include',
     ]
 
