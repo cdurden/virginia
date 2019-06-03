@@ -79,6 +79,7 @@ class Directory(Base):
         self.path = os.path.abspath(os.path.normpath(path))
         self.use_mathjax = False
 
+    # This is the main method for finding files to serve
     def __getitem__(self, name):
         nextpath = self.filesystem.join(self.path, name)
         if self.filesystem.islink(nextpath):

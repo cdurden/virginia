@@ -21,6 +21,7 @@ def main(global_config, **settings):
         raise ValueError('virginia requires a root')
     root_path = os.path.abspath(os.path.normpath(root))
     fs = Filesystem(root_path)
+    # Create Directory object for the root directory
     def get_root(request):
         #raise Exception(request.path_info)
         if request.path_info == '/Aa9sF92fJk3Hbsk23js9wjJNM':

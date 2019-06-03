@@ -1,4 +1,5 @@
 import os
+from os.path import getmtime
 import mimetypes
 
 mimetypes.add_type('text/html', '.stx')
@@ -42,9 +43,14 @@ import bib2html
 def file_view(context, request):
     dirname, filename = os.path.split(context.path)
     name, ext = os.path.splitext(filename)
+    # Set the last modified header to the last modified time of the file being served
+    request.response.last_modified = getmtime(context.path)
     if ext == '':
         result = raw_view(context,request)
     else:
+        #The prototype for this function is
+        #render_view_to_response(context, request, name='', secure=True)
+        #our views are based on the extension of the file being served, so we pass this as the name parameter to the view callable
         result = render_view_to_response(context, request, ext)
     return result
 
