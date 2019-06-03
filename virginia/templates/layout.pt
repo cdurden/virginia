@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8" name=viewport content='width=500'>
     <title>${title}</title>
-    <link rel="stylesheet" href="${request.resource_url(request.virtual_root,'css','main.css')}"/>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="${request.resource_url(request.virtual_root,'css','main.css')}"/>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
     <script src="${request.resource_url(request.virtual_root,'js','jquery-latest.min.js')}"></script>
     <script src="${request.resource_url(request.virtual_root,'js','jquery-ui-1.12.1','jquery-ui.js')}"></script>
