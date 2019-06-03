@@ -253,7 +253,6 @@ def bib_view(context, request):
 
 #@view_config(context=File, name='.html')
 @view_config(context=File, name='.js')
-@view_config(context=File, name='.css')
 @view_config(context=File, name='.pdf')
 @view_config(context=File, name='.png')
 @view_config(context=File, name='.ttf')
@@ -270,4 +269,11 @@ def raw_view(context, request):
     """ Just return the source raw.
     """
     response = FileResponse(context.path)
+    return response
+
+@view_config(context=File, name='.css')
+def css_view(context, request):
+    """ Just return the source raw.
+    """
+    response = FileResponse(context.path, content_type='text/css')
     return response
