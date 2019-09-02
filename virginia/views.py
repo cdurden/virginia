@@ -130,7 +130,8 @@ def markdown_view_as_tex(context, request):
 
 # Markdown Extensions
     markdown_include = MarkdownInclude(
-                           configs={'base_path':context.dirname()}
+                           #configs={'base_path':context.dirname()}
+                           configs={'base_path':request.registry.settings['includepath']}
                        )
     result = markdown.markdown(source, extensions=['latex','extra','attr_list','markdown.extensions.extra','markdown.extensions.meta',markdown_include])
 
@@ -151,7 +152,8 @@ def markdown_view(context, request):
 
     markdown_include = MarkdownInclude(
                            #configs={'base_path':context.filesystem.root_path}
-                           configs={'base_path':context.dirname()}
+                           #configs={'base_path':context.dirname()}
+                           configs={'base_path':request.registry.settings['includepath']}
                        )
     md = markdown.Markdown(extensions=['mdx_math','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
     result = md.convert(source)
