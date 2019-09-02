@@ -213,7 +213,8 @@ def remark_view(context, request):
 
     markdown_include = MarkdownInclude(
                            #configs={'base_path':context.filesystem.root_path}
-                           configs={'base_path':context.dirname()}
+                           #configs={'base_path':context.dirname()}
+                           configs={'base_path':request.registry.settings['includepath']}
                        )
     md = markdown.Markdown(extensions=['mathjax','attr_list',TableExtension(),TocExtension(baselevel=1),'markdown.extensions.extra','markdown.extensions.meta','pymdownx.emoji',markdown_include])
     try:
