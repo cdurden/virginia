@@ -226,7 +226,7 @@ def remark_view(context, request):
     return dict(title=title, content=source, head=None)
 
 
-@view_config(context=File, name='.html', renderer='templates/layout.pt')
+#@view_config(context=File, name='.html', renderer='templates/layout.pt')
 def html_view(context, request):
     """ Filesystem-based HTML view
     """
@@ -267,7 +267,8 @@ def bib_view(context, request):
 @view_config(context=File, name='.json')
 @view_config(context=File, name='.svg')
 @view_config(context=File, name='.md', renderer='templates/layout.pt', request_param='raw=true')
-@view_config(context=File, name='.html', request_param='raw=true')
+@view_config(context=File, name='.html')
+#@view_config(context=File, name='.html', request_param='raw=true')
 @view_config(context=File, name='.zip')
 def raw_view(context, request):
     """ Just return the source raw.
